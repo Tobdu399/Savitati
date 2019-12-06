@@ -3,7 +3,11 @@ window.onload = start;
 
 function start() {
   chooseColor();
-  window.navigator.vibrate(60000); // vibrate for one minute
+  vibrate(60000); // Vibrate mobile device for one minute
+}
+
+function vibrate(ms) {
+  navigator.vibrate(ms)
 }
 
 function red() {
